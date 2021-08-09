@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="src/style_contact.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
-  <title>RContact</title>
+  <title>Contact</title>
 
 </head>
 <body>
@@ -23,7 +26,27 @@
             </ul>
         </nav>
 
+    <div class="contact">
+        <form>
+            <div class="left-side">
+                <label for="name"><h2>Name</h2></label>
+                <input type="text" placeholder="Your name...">
+                <label for="email" ><h2>Email Adress</h2></label>
+                <input type="text" placeholder="Your email adress...">
+                <label for="ph-num" ><h2>Phone Number</h2></label>
+                <input type="text" placeholder="Your phone number...">
+            </div>
+            <div class="right-side">
+                <label for="name" ><h2>Massaege</h2></label>
+                <textarea placeholder="Massaege..."></textarea>
+                <!-- <input type="text" placeholder="Massaege..."> -->
+            </div>
+            <input type="submit" value="Submit">
+            
+        </form>
     </div>
+</div>
+
 
 
 </body>
