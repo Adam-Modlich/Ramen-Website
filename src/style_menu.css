@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+body, html{
+    height: 100%;
+    margin:0;
+}
+
+body nav{
+    background-color: white;
+    box-shadow: 0 8px 8px -4px rgb(120, 121, 177);
+}
+
+.navbar{
+    font-size: 25px;
+    list-style-type: none;
+    padding: 3%;
+    padding-bottom: 5%;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.bg{
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -15%;
+}
+
+.bg::after{
+    content: "";
+    background: 
+    linear-gradient(
+          rgba(0, 0, 0, 0.4), 
+          rgba(0, 0, 0, 0.1)
+        ),
+    url(japan.jpg);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+/* a:hover{
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 52px;
+} */
+
+li{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.top-side{
+    text-align: center;
+    color: white;
+    /* padding-bottom: 100px; */
+}
+
+.menu{
+    text-align: center;
+}
+
+.dishes{
+    color:black;
+    text-align: center;
+}
+
+.dishes h2{
+    padding-top: 3%;
+    font-family: 'Lobster', cursive;
+}
+
+.dishes p{
+    font-family: 'Fjalla One', sans-serif;
+    padding-top: 1%;
+}
+
+.dishes h3:hover{
+    text-decoration: underline;
+    text-decoration-color: pink;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+}
+
+.bottom-side{
+    margin-top: 50px;
+    background-color: black;
+    width: 100%;
+    height: 20vh;
+}

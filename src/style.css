@@ -136,6 +136,12 @@ a{
     color:black;
 }
 
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 52px;}
+
 li{
     padding-left: 3%;
     padding-right: 3%;
