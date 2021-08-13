@@ -57,7 +57,7 @@ a:hover{
     text-decoration: underline;
     text-decoration-color: green;
     text-decoration-thickness: 5px;
-    text-underline-offset: 52px;
+    text-underline-offset: 5.7vh;
 }
 
 li{
@@ -118,7 +118,7 @@ li{
 }
 
 .add{
-    display: block;
+    display: inline-block;
     margin: 0;
     position: fixed;
     left:-20px;
@@ -128,14 +128,30 @@ li{
     color:black;
 }
 
+.slider{
+    position: fixed;
+    display: block;
+    width: 41vh;
+    height: 60vh;
+    left:-42vh;
+    top:25%;
+    color:black;
+    transition: 1s ease-in-out;
+    background-color: white;
+    box-shadow: 1vh 1vh 1vh pink;
+}
+
 .add h1{
     background-color: pink;
+    border-radius: 5px;
+    border: solid black 2px;
 }
 
-.add .additives{
-    display: none;
+.add:hover + .slider{
+    transform: translateX(100%);
 }
 
-.add h1:hover + additives{
-    display: block;
+.slider:hover{
+    transform: translateX(100%);
 }
+
