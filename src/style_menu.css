@@ -174,13 +174,52 @@ li{
 .button_drinks{
     position:absolute;
     right:25vh;
-    top:120vh;
+    top:110vh;
 }
 
 #slider_drinks{
-    visibility: hidden;
+    visibility: visible;
+    /* opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear; */
+    width: 40vh;
+    height: 60vh;
+    background-color: white;
+    box-shadow: 1vh 1vh 1vh 1vh pink;
+    text-align: center;
     position:absolute;
-    right:25vh;
-    top:123vh;
+    right:8vh;
+    top:113vh;
 }
+
+#drinks_back{
+    visibility: hidden;
+    /* opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear; */
+    width: 40vh;
+    height: 60vh;
+    background-color: white;
+    box-shadow: 1vh 1vh 1vh 1vh pink;
+    text-align: center;
+    position:absolute;
+    right:8vh;
+    top:113vh;
+
+}
+
+#slider_drinks p{
+    padding: 2%;
+}
+
+#slider_drinks h2{
+    padding: 2%;
+}
+
+#drinks_back p{
+    padding: 2%;
+}
+
+#drinks_back h2{
+    padding: 2%;
+}
+
 
