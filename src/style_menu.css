@@ -193,33 +193,26 @@ li{
 
 #slider_drinks{
     visibility: visible;
-    /* opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear; */
     width: 40vh;
-    height: 50vh;
+    /* height: 50vh; */
     background-color: white;
     box-shadow: 1vh 1vh 1vh 1vh pink;
     text-align: center;
     position:absolute;
     right:8vh;
     top:113vh;
-    backface-visibility: hidden;
 }
 
 #drinks_back{
     visibility: hidden;
-    /* opacity: 0; */
-    transition: visibility 0s, opacity 0.5s linear;
     width: 40vh;
-    height: 50vh;
+    /* height: 50vh; */
     background-color: white;
     box-shadow: 1vh 1vh 1vh 1vh pink;
     text-align: center;
     position:absolute;
     right:8vh;
     top:113vh;
-    /* transform: rotateX(-180deg); */
-    backface-visibility: hidden;
 
 }
 
