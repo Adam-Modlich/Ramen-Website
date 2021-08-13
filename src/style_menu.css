@@ -155,3 +155,32 @@ li{
     transform: translateX(100%);
 }
 
+.slider div{
+    text-align: center;
+    padding: 15%;
+}
+
+.slider p{
+    font-family: 'Fjalla One', sans-serif;
+    padding: 5%;
+    font-size: 2.5vh;
+}
+
+.slider h2{
+    font-size: 3vh;
+    font-family: 'Lobster', cursive;
+}
+
+.button_drinks{
+    position:absolute;
+    right:25vh;
+    top:120vh;
+}
+
+#slider_drinks{
+    visibility: hidden;
+    position:absolute;
+    right:25vh;
+    top:123vh;
+}
+
