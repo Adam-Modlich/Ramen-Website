@@ -65,6 +65,12 @@ li{
     float: left;
 }
 
+.middle{
+    font-family: 'Lobster', cursive;
+    float: left;
+    margin-left: 23%;
+}
+
 .right{
     float: right;
 }
