@@ -3,6 +3,14 @@
     margin: 0 auto;
     padding: 50px;
   } */
+
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 5.8vh;
+}
+
 form{
     margin-top: 6vh;;
 }
