@@ -34,23 +34,37 @@
     </div>
         <div class="menu">
             <div class="dishes">
-                <div class="category">
-                    <h2>APPETIZERS</h2>
+                <div class="category" id="APPETIZERS">
+                    <h2>APPETIZERS <button onclick="addMenu1()"></button></h2>
                     <p><h3>Siew's pickle plate</h3><br> with sanscho cabbage, mustard zucchini and panch phoron purple cauliflower <br> 12</p>
                     <p><h3>Little gem salad</h3><br> with shallot vinaigrette, fennel, avocado, mendocino nori <br> black sesame, and miso creme fraiche <br> 13 </p>
                     <p><h3>Hierloom tomato salad</h3><br> with cucumbers,with sweet fermented chill sauce <br> 14 </p>
                     <p><h3>Pork and Schrimp dumplings (5 pcs)</h3><br> with royu and mayer ponzu dipping sauce and scollions <br> 15 </p>
                 </div>
-                <div class="category">
-                    <h2>RICE</h2>
+            
+                <div class="category" id="RICE">
+                    <h2>RICE<button onclick="addMenu2()"></button></h2>
                     <p><h3>Fried local sanddab donburi </h3><br> with sauce gribiche, sansho cabbage, sunomono cucumber, and scollins <br> 20</p>
                     <p><h3>Monterey bay squid and pork fried rice</h3><br> with broccolini, cherry tomatoes, cilantro, basil and spicy shrimp-chilli paste <br> 17 </p>
                 </div>
-                <div class="category">
-                    <h2>RAMEN</h2>
+                
+                <div class="category" id="RAMEN">
+                    <h2>RAMEN<button onclick="addMenu3()"></button></h2>
                     <p><h3>Classic shoyu ramen</h3><br> with pork chashu, shoyu-marineted egg, <br> pepperonata, roasted summer squash, scalliors, <br> and mizuna <br> 21,5 </p>
                     <p><h3>Veggie meyer lemon shoyu ramen</h3><br> with salt-cured egg, bok choy, early girl tomato confit <br> and komatsuna <br> 21,5 </p>
                     <p><h3>Miso ramen</h3><br> with pork chashu, shoyu-marinated egg, butter corn <br> roasted eggplant, rayu, and shungiku <br> 21.5 </p>
+                </div>
+
+                <div id="addForm">
+                    <div style="padding: 20%; color: white;">
+                        <label>Dish Title</label><br>
+                        <input type="title" id="Title" required><br>
+                        <label>Ingrediens</label><br>
+                        <input type="ingrediens" id="Ing" required><br>
+                        <label>Price</label><br>
+                        <input type="price" id="Price" required><br><br>
+                        <button type="submit" id="submitButton" onclick="closeFun()">Submit</button>
+                    </div>
                 </div>
             </div>
         </div>

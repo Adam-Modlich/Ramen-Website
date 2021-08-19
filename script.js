@@ -38,3 +38,36 @@ checkinElem.setAttribute("min", dateTomorrow);
 checkinElem.onchange = function () {
     checkoutElem.setAttribute("min", this.value);
 }
+
+
+
+function addMenu1(){
+  var addAppetizers = document.getElementById("APPETIZERS");
+  var Form = document.getElementById("addForm");
+
+
+  Form.style.display = "block";
+
+}
+
+function addMenu2(){
+  var addRice = document.getElementById("RICE");
+  var Form = document.getElementById("addForm");
+
+
+  Form.style.display = "block";
+
+}
+
+function addMenu3(){
+  var addRamen = document.getElementById("RAMEN");
+  var Form = document.getElementById("addForm");
+
+  Form.style.display = "block";
+}
+
+function closeFun(){
+  var Form = document.getElementById("addForm");
+
+  Form.style.display = "none";
+}
