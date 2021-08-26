@@ -39,35 +39,41 @@ checkinElem.onchange = function () {
     checkoutElem.setAttribute("min", this.value);
 }
 
-
-
-function addMenu1(){
-  var addAppetizers = document.getElementById("APPETIZERS");
+function openForm(parentName){
   var Form = document.getElementById("addForm");
 
+  var closingButton = document.getElementById("submitButton");
 
   Form.style.display = "block";
 
-}
+  var title = document.getElementById("title").value;
+  var ing = document.getElementById("ing").value;
+  var price = document.getElementById("price").value;
 
-function addMenu2(){
-  var addRice = document.getElementById("RICE");
-  var Form = document.getElementById("addForm");
-
-
-  Form.style.display = "block";
-
-}
-
-function addMenu3(){
-  var addRamen = document.getElementById("RAMEN");
-  var Form = document.getElementById("addForm");
-
-  Form.style.display = "block";
+  closingButton.addEventListener("click", function () {add(parentName, title, ing, price)} );
 }
 
 function closeFun(){
   var Form = document.getElementById("addForm");
 
   Form.style.display = "none";
+}
+
+function add(parentName, title, ing, price){
+
+  var elem = document.getElementById(parentName);
+
+  var para = document.createElement("p");
+  
+  var titleh3 = document.createElement("h3");
+
+  var nodeTitle = document.createTextNode(title);
+
+  titleh3.appendChild(nodeTitle);
+
+  document.write(nodeTitle);
+
+  para.innerHTML = titleh3 + '<br>' + ing + '<br>' + price ;
+
+  elem.appendChild(titleh3);
 }
