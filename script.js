@@ -46,11 +46,27 @@ function openForm(parentName){
 
   Form.style.display = "block";
 
-  var title = document.getElementById("title").value;
-  var ing = document.getElementById("ing").value;
-  var price = document.getElementById("price").value;
+  closingButton.addEventListener("click", function (){
 
-  closingButton.addEventListener("click", function () {add(parentName, title, ing, price)} );
+    var title = document.getElementById("title").value;
+    var ing = document.getElementById("ing").value;
+    var price = document.getElementById("price").value;
+
+    var elem = document.getElementById(parentName);
+
+    var para = document.createElement("p");
+    
+    // var titleh3 = document.createElement("h3");
+    
+    // titleh3.appendChild(title);
+  
+    // document.write(nodeTitle);
+  
+    para.innerHTML = "<h3>" + title + "</h3>" + "<br>" + ing + "<br>" + price ;
+  
+    elem.appendChild(para);
+
+  });
 }
 
 function closeFun(){
@@ -59,21 +75,21 @@ function closeFun(){
   Form.style.display = "none";
 }
 
-function add(parentName, title, ing, price){
+// function add(parentName){
 
-  var elem = document.getElementById(parentName);
+//   var elem = document.getElementById(parentName);
 
-  var para = document.createElement("p");
+//   var para = document.createElement("p");
   
-  var titleh3 = document.createElement("h3");
+//   var titleh3 = document.createElement("h3");
 
-  var nodeTitle = document.createTextNode(title);
+//   // var nodeTitle = document.createTextNode(title);
 
-  titleh3.appendChild(nodeTitle);
+//   titleh3.appendChild(title);
 
-  document.write(nodeTitle);
+//   document.write(nodeTitle);
 
-  para.innerHTML = titleh3 + '<br>' + ing + '<br>' + price ;
+//   para.innerHTML = titleh3 + "<br>" + ing + "<br>" + price ;
 
-  elem.appendChild(titleh3);
-}
+//   elem.appendChild(para);
+// }
