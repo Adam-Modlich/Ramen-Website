@@ -1,13 +1,16 @@
+
+
 function myFunction(){
     var x = document.getElementById("slider_drinks");
     var y = document.getElementById("drinks_back");
     var z = document.getElementById("myButton1");
 
+    let top1 = document.getElementById("slider_drinks").offsetTop;
+
     if (x.style.visibility == "visible"){
         x.style.visibility = "hidden";
         y.style.visibility = "visible";
         z.innerText="Non Alcoholic Drinks";
-
     }
     else{
         x.style.visibility = "visible";
@@ -15,6 +18,7 @@ function myFunction(){
         z.innerText="Drinks";
 
     }
+
 }
 
 var currentDateTime = new Date();
@@ -40,6 +44,11 @@ checkinElem.onchange = function () {
 }
 
 function openForm(parentName){
+
+  document.getElementById("title").value = '';
+  document.getElementById("ing").value = '';
+  document.getElementById("price").value = '';
+
   var Form = document.getElementById("addForm");
 
   var closingButton = document.getElementById("submitButton");
@@ -55,12 +64,6 @@ function openForm(parentName){
     var elem = document.getElementById(parentName);
 
     var para = document.createElement("p");
-    
-    // var titleh3 = document.createElement("h3");
-    
-    // titleh3.appendChild(title);
-  
-    // document.write(nodeTitle);
   
     para.innerHTML = "<h3>" + title + "</h3>" + "<br>" + ing + "<br>" + price ;
   
@@ -70,26 +73,9 @@ function openForm(parentName){
 }
 
 function closeFun(){
+
   var Form = document.getElementById("addForm");
 
   Form.style.display = "none";
-}
-
-// function add(parentName){
-
-//   var elem = document.getElementById(parentName);
-
-//   var para = document.createElement("p");
   
-//   var titleh3 = document.createElement("h3");
-
-//   // var nodeTitle = document.createTextNode(title);
-
-//   titleh3.appendChild(title);
-
-//   document.write(nodeTitle);
-
-//   para.innerHTML = titleh3 + "<br>" + ing + "<br>" + price ;
-
-//   elem.appendChild(para);
-// }
+}
