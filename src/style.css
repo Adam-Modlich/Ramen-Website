@@ -18,6 +18,8 @@ body, html{
     background-size: cover;
 }
 
+
+
 .bg::after{
     content: "";
     background: 

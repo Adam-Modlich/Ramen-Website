@@ -15,20 +15,24 @@
 <body>
     <div>
         <nav>
-            <ul class="navbar">
+            <button class="navbar-toggle" id="js-navbar-toggle" onclick="toggleFunction()">
+                <i class="fa fa-bars"></i>
+            </button>
+            <button class="close-toggle" id="js-close-toggle">
+                <i class="fa fa-close"></i>
+            </button>
+            <ul class="navbar" id="js-navbar">
                 <li class="left"><a href="index.html">Welcome</a></li>
                 <li class="left"><a href="Menu.html" style="color:rgb(185, 123, 133)">Menu</a></li>
                 <li class="middle">RamenTime</li>
                 <li class="right"><a href="Reserve.html">Reservations</a></li>
-                <!-- <li class="right"><a href="Order.html">Order now</a></li> -->
                 <li class="right"><a href="Contact.html">Contact</a></li>
-
             </ul>
         </nav>
     </div>
     <div class="bg">
         <div class="top-side">
-            <h1 style="padding-top: 6%; padding-bottom: 5vh; font-size: 20vh;">Menu</h1>
+            <h1 style="padding-top: 6%; padding-bottom: 5vw; font-size: 20vh;">Menu</h1>
             <p style="font-size: 4vh;">The mission is simple: serve delicious, affordable food <br> that guests will want to return to week after week</p>
         </div>
     </div>
@@ -122,6 +126,8 @@
 
 
         <div class="bottom-side"></div>
+
+        
 
 
 </body>

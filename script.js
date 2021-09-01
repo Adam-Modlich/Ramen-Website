@@ -5,8 +5,6 @@ function myFunction(){
     var y = document.getElementById("drinks_back");
     var z = document.getElementById("myButton1");
 
-    let top1 = document.getElementById("slider_drinks").offsetTop;
-
     if (x.style.visibility == "visible"){
         x.style.visibility = "hidden";
         y.style.visibility = "visible";
@@ -20,6 +18,29 @@ function myFunction(){
     }
 
 }
+
+// function myFunction() {
+//   var element = document.getElementById("myDIV");
+//   element.classList.toggle("mystyle");
+// }
+// let closeNav = document.getElementById("js-close-toggle");
+// let navbar = document.getElementById("js-navbar");
+
+function toggleFunction(){
+  let closeNav = document.getElementById("js-close-toggle");
+  let navbar = document.getElementById("js-navbar");
+  navbar.classList.toggle("activeNavbar");
+  // closeNav.classList.toggle("activeNavbar");
+}
+
+
+
+
+
+
+
+
+
 
 var currentDateTime = new Date();
 var year = currentDateTime.getFullYear();

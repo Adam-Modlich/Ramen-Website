@@ -13,76 +13,131 @@ body nav{
     box-shadow: 0 8px 8px -4px rgb(120, 121, 177);
 }
 
+@media screen and (min-width:1001px){
+
+    .navbar{
+        font-size: 25px;
+        list-style-type: none;
+        padding: 3%;
+        padding-bottom: 5%;
+    }
+        
+    a{
+        text-decoration: none;
+        color:black;
+        }
+        
+    a:hover{
+        text-decoration: underline;
+        text-decoration-color: green;
+        text-decoration-thickness: 5px;
+        text-underline-offset: 5.7vh;
+        }
+        
+    li{
+        padding-left: 3%;
+        padding-right: 3%;
+        }
+        
+    .left{
+        width:15%;
+        float: left;
+        }
+        
+    .middle{
+        width:10%;
+        text-align: center;
+        text-shadow: 2px 3px rgb(235, 170, 180);
+        font-family: 'Lobster', cursive;
+        float: left;
+        }
+        
+    .right{
+        text-align: right;
+        width:15%;
+        float: right;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .close-toggle{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:1000px){
+    
 .navbar{
     font-size: 25px;
     list-style-type: none;
     padding: 3%;
     padding-bottom: 5%;
-}
-
+    display: none;
+    }
+    
 a{
     text-decoration: none;
     color:black;
 }
 
-.bg{
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: -15%;
+a:hover{
+    color:pink;
+    transition: 0.3s;
 }
 
-.bg::after{
+li{
+    text-align: center;
+    margin: 15px auto;
+}
+
+.navbar-toggle{
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+    }
+
+.close-toggle{
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;  
+}
+
+.middle{
+    display: none;
+}
+}
+
+.activeNavbar {
+    display: block;
+}
+
+.bg{
     content: "";
+    height: 100%;
     background: 
     linear-gradient(
           rgba(0, 0, 0, 0.4), 
           rgba(0, 0, 0, 0.1)
         ),
     url(japan.jpg);
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
     z-index: -1; 
-    height: 75vh;
+    height: 45vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;  
 }
 
-a:hover{
-    text-decoration: underline;
-    text-decoration-color: green;
-    text-decoration-thickness: 5px;
-    text-underline-offset: 5.7vh;
-}
-
-li{
-    padding-left: 3%;
-    padding-right: 3%;
-}
-
-.left{
-    width:15%;
-    float: left;
-}
-
-.middle{
-    width:10%;
-    text-align: center;
-    text-shadow: 2px 3px rgb(235, 170, 180);
-    font-family: 'Lobster', cursive;
-    float: left;
-}
-
-.right{
-    text-align: right;
-    width:15%;
-    float: right;
-}
 
 .top-side{
     text-align: center;
@@ -198,7 +253,7 @@ li{
     border-radius: 5px;
 }
 
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
     #slider_drinks{
         visibility: visible;
         width: 40vh;
@@ -233,7 +288,7 @@ li{
 }
 
 
-@media (max-width: 1599px) {
+@media screen and (max-width: 1599px) {
 
     .drinks{
         display: flex;
