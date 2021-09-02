@@ -1,25 +1,13 @@
-/* body {
-    width: 500px;
-    margin: 0 auto;
-    padding: 50px;
-  } */
-
-a:hover{
-    text-decoration: underline;
-    text-decoration-color: green;
-    text-decoration-thickness: 5px;
-    text-underline-offset: 5.8vh;
-}
 
 form{
-    margin-top: 6vh;;
+  padding-top: 10%;
 }
   
   div.elem-group {
     padding-left: 10%;
     padding-right: 10%;
     color:white;
-    margin: 10px 0;
+    /* margin: 10px 0; */
   }
   
   div.elem-group.inlined {
@@ -30,7 +18,7 @@ form{
   label {
     display: block;
     font-family: 'Nanum Gothic';
-    padding-bottom: 10px;
+    padding-bottom: 0.1em;
     font-size: 1.25em;
   }
   
@@ -41,7 +29,7 @@ form{
     font-size: 1.25em;
     font-family: 'Nanum Gothic';
     width: 100%;
-    padding: 10px;
+    padding: 2%;
   }
   
   div.elem-group.inlined input {
@@ -50,10 +38,10 @@ form{
   }
   
   textarea {
-    height: 20vh;
+    height: 15vh;
   }
   
-  button {
+  .submitButton {
     height: 5vh;
     background: orange;
     border: none;

@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+
 
   <title>Contact</title>
 
@@ -16,17 +18,23 @@
 <body>
     
     <div class="bg">
-        <nav>
-            <ul class="navbar">
-                <li class="left"><a href="index.html">Welcome</a></li>
-                <li class="left"><a href="Menu.html">Menu</a></li>
-                <li class="middle">RamenTime</li>
-                <li class="right"><a href="Reserve.html">Reservations</a></li>
-                <!-- <li class="right"><a href="Order.html">Order now</a></li> -->
-                <li class="right"><a href="Contact.html" style="color:rgb(185, 123, 133)">Contact</a></li>
-
-            </ul>
-        </nav>
+        <div>
+            <nav>
+                <button class="navbar-toggle" id="js-navbar-toggle" onclick="toggleFunction()">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <button class="close-toggle" id="js-close-toggle">
+                    <i class="fa fa-close"></i>
+                </button>
+                <ul class="navbar" id="js-navbar">
+                    <li class="left"><a href="index.html">Welcome</a></li>
+                    <li class="left"><a href="Menu.html" >Menu</a></li>
+                    <li class="middle">RamenTime</li>
+                    <li class="right"><a href="Reserve.html">Reservations</a></li>
+                    <li class="right"><a href="Contact.html" style="color:rgb(185, 123, 133)">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
 
     <div class="contact">
         <form>
